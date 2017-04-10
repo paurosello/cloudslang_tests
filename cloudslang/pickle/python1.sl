@@ -9,7 +9,7 @@ operation:
   python_action:
     script: |
       import pickle
-      array_p = ["123","1233"]
+      array_p = {"a":["123","1233"], "test":{"asd":123}}
       print array_p
       array = pickle.dumps(array_p)
       returnCode = 0
